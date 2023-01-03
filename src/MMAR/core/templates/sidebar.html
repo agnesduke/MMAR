@@ -1,0 +1,39 @@
+<div class="sidebar">
+    <div class="sidebar-header">
+     <h3 class="brand">
+         <span class="ti-unlink"></span>
+         <span>ETS BEAUTY</span>
+     </h3>
+     
+     <label for="sidebar-toggle" class="ti-menu-alt"></label>
+    </div>
+    <div class="sidebar-menu">
+     <ul>
+         <li>
+             <a href="{% url 'home' %}">
+                 <span class="ti-home"></span>
+                 <span> Acceuil</span>
+             </a>
+         </li>
+                   
+         <li>
+             <a href="{% url 'client' %}">
+                 <span class="ti-clipboard"></span>
+                 <span>clients</span>
+             </a></li>
+         <li>
+             <a href="{% url 'services' %}">
+                 <span class="ti-folder"></span>
+                 <span>services</span>
+             </a>
+         </li>
+         
+         <li>
+             <a href="{% url 'compte' %}">
+                 <span class="ti-settings"></span>
+                 <span>compte</span>
+             </a>
+         </li>
+     </ul>
+    </div>
+ </div>

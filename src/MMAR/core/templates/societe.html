@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    {% include 'sidebar.html' %}
+       <div class="main-content">
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="search">
+            </div>
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+           
+        </header>
+        <main>
+            <h2 class="dash-title">quelques imqges</h2>
+            <div class="dash-cards">
+                <div class="img">
+                    <img class="card-single" src="{% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
+                    <h4>manicure</h4><br>
+                </div>
+
+                <div class="img">
+                    <img class="card-single" src=" {% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
+                    <h4>manicure</h4><br>
+                </div>
+
+                <div class="img">
+                    <img class="card-single" src="{% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
+                    <h4>manicure</h4><br>
+                </div>
+
+                <div class="img">
+                    <img class="card-single" src="{% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
+                    <h4>manicure</h4><br>
+                </div>
+               
+            
+             
+        </div>
+            <section class="recent">
+                <div class="activity-grid">
+                        
+                    <div class="activity-card">
+                        <h3>clients ressent</h3>
+
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Telephone</th>
+                                        <th>Nom du client</th>
+                                        <th>service sollicite</th>
+                                        <th>Jour de visite</th>
+                                        <th>Prix</th>
+                                        <th>freauence de recette</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                        <td>6576543456</td>
+                                        <td>agnes</td>
+                                        <td>tresse</td>
+                                        <td>23 juillet 2022</td>
+                                        <td>10.000</td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>2354657843734</td>
+                                        <td>mileine</td>
+                                        <td>massage</td>
+                                        <td>12 aout 2022</td>
+                                        <td>25.000</td>
+                                        <td><center>13</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>223345566</td>
+                                        <td>baba</td>
+                                        <td>coifffff</td>
+                                        <td>24 septembre 2022</td>
+                                        <td>5.000</td>
+                                        <td><center>6</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>23455667778</td>
+                                        <td>barbie</td>
+                                        <td>ongle</td>
+                                        <td>30 deembre 1022</td>
+                                        <td>6.000</td>
+                                        <td><center>5</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>374654758465</td>
+                                        <td>mimi</td>
+                                        <td>soins</td>
+                                        <td>1 janvier 2023</td>
+                                        <td>20.000</td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div> 
+               
+                </div>
+            </section>
+        </main>
+       </div>
+   
+    
+</body>
+</html>

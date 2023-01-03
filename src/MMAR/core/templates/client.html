@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+      {% include 'sidebar.html' %}
+       <div class="main-content">
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="search">
+            </div>
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+           
+        </header>
+        <main>
+            <h2 class="dash-title">page clients</h2>
+           
+            <section class="recent">
+                <div class="activity-grid">
+                        
+                    <div class="activity-card">
+                        <h3>liste de tous nos clients</h3>
+
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Telephone</th>
+                                        <th>Nom du client</th>
+                                        <th>service sollicite</th>
+                                        <th>Jour de visite</th>
+                                        <th>Prix</th>
+                                        <th>Modifier</th>
+                                        <th>Supprimer</th>
+                                        <th>Frequence de visite</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                        <td>6576543456</td>
+                                        <td>agnes</td>
+                                        <td>tresse</td>
+                                        <td>23 juillet 2022</td>
+                                        <td>10.000</td>
+                                        <td><button onclick="document.getElementById('id01').style.display='block'">modifier</button></td>
+                                        <td><button onclick="document.getElementById('id03').style.display='block'">Supprimer</button></td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>2354657843734</td>
+                                        <td>mileine</td>
+                                        <td>massage</td>
+                                        <td>12 aout 2022</td>
+                                        <td>25.000</td>
+                                        <td><button onclick="document.getElementById('id01').style.display='block'">modifier</button></td>
+                                        <td><button onclick="document.getElementById('id03').style.display='block'">Supprimer</button></td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>223345566</td>
+                                        <td>baba</td>
+                                        <td>coifffff</td>
+                                        <td>24 septembre 2022</td>
+                                        <td>5.000</td>
+                                        <td><button onclick="document.getElementById('id01').style.display='block'">modifier</button></td>
+                                        <td><button onclick="document.getElementById('id03').style.display='block'">Supprimer</button></td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>23455667778</td>
+                                        <td>barbie</td>
+                                        <td>ongle</td>
+                                        <td>30 deembre 1022</td>
+                                        <td>6.000</td>
+                                        <td><button onclick="document.getElementById('id01').style.display='block'">modifier</button></td>
+                                        <td><button onclick="document.getElementById('id03').style.display='block'">Supprimer</button></td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                   <tr>
+                                        <td>374654758465</td>
+                                        <td>mimi</td>
+                                        <td>soins</td>
+                                        <td>1 janvier 2023</td>
+                                        <td>20.000</td>
+                                        <td><button onclick="document.getElementById('id01').style.display='block'">modifier</button></td>
+                                        <td><button onclick="document.getElementById('id03').style.display='block'">Supprimer</button></td>
+                                        <td><center>10</center></td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div> 
+                    <!--formulaire modifier-->
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">fermer</span>
+                        <form class="modal-content" action="">
+                          <div class="container">
+                            <h6>Remplissez moi</h6>
+                           
+                           
+                            <label for="telephone"><b>telephone</b></label>
+                            <input type="text" placeholder="Entrer numero telephone client" name="telephone" required>
+                      
+                            <label for="nom"><b>nom client</b></label>
+                            <input type="text" placeholder="Entrer le nom du client" name="nom" required>
+        
+                            <label for="quartier"><b>quartier du client</b></label>
+                            <input type="text" placeholder="Entrer le nom du client" name="quartier" required>
+        
+                            <label for="service"><b>service sollicite</b></label>
+                            <select name="service" id="">service</select><br>
+        
+                            <label for="prix"><b>prix du service</b></label>
+                            <input type="text" placeholder="Entrer le prix du service" name="prix" required>
+        
+                            <label for="date"><b>date de visite</b></label>
+                            <input type="date" placeholder="Entrer la date de visite du client" name="date" required>
+                            
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                              <button type="submit" class="signup">enregistre</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </section>
+
+            <!--formulaire ajouter-->
+            <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">fermer</span>
+                <form class="modal-content" action="" method="post">
+                  {% csrf_token %}
+                  <div class="container">
+                    <h6>Remplissez moi</h6>
+                   
+                   
+                    <label for="telephone"><b>telephone</b></label>
+                    <input type="text" placeholder="Entrer numero telephone client" name="telephone" required>
+              
+                    <label for="nom"><b>nom client</b></label>
+                    <input type="text" placeholder="Entrer le nom du client" name="nom" required>
+
+                    <label for="quartier"><b>quartier du client</b></label>
+                    <input type="text" placeholder="Entrer le nom du client" name="quartier" required>
+
+                    <label for="service"><b>service sollicite</b></label>
+                    <select name="service" id="">service</select><br>
+
+                    <label for="prix"><b>prix du service</b></label>
+                    <select name="prix" id=""></select><br>
+
+                    <label for="date"><b>date de visite</b></label>
+                    <input type="date" placeholder="Entrer la date de visite du client" name="date" required>
+           
+                    
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signup">enregistre</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <button onclick="document.getElementById('id02').style.display='block'">Ajouter</button>
+
+               <!--formulaire suprimer-->
+
+               <div id="id03" class="modal">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">fermer</span>
+                <form class="modal-content" action="" method="post">
+                  <div class="container">
+                    <h6>Remplissez moi</h6>
+                   
+                   
+                    <label for="id"><b>telephone</b></label>
+                    <input type="text" placeholder="Entrer numero telephone client" name="id" required>
+              
+                    <label for="nom"><b>nom</b></label>
+                    <input type="text" placeholder="Entrer le nom du client" name="nom" required>
+    
+              
+                    
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signup">enregistre</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              
+        </main>
+       </div>
+   
+    
+       <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+         // Get the modal
+         var modal = document.getElementById('id03');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</body>
+</html>
