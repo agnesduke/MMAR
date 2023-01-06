@@ -1,9 +1,9 @@
 from django.urls import path, include
-from .views import Home,ClientPage,ServicesPage,comptePage
+from .views import Home,ClientView,ServicesView,AccountView
 
 urlpatterns = [
     path("", Home.as_view(), name="home"),
-    path("client",ClientPage.as_view(),name="client"),
-    path('service',ServicesPage.as_view(),name='services'),
-    path('compte',comptePage.as_view(),name='compte'),
+    path("client",ClientView.as_view(),name="client"),
+    path('service',ServicesView.as_view(),name='services'),
+    path('compte',AccountView.as_view(),name='compte'),
 ]
