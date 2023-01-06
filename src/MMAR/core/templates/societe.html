@@ -27,31 +27,31 @@
            
         </header>
         <main>
-            <h2 class="dash-title">quelques imqges</h2>
-            <div class="dash-cards">
-                <div class="img">
-                    <img class="card-single" src="{% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
-                    <h4>manicure</h4><br>
-                </div>
-
-                <div class="img">
-                    <img class="card-single" src=" {% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
-                    <h4>manicure</h4><br>
-                </div>
-
-                <div class="img">
-                    <img class="card-single" src="{% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
-                    <h4>manicure</h4><br>
-                </div>
-
-                <div class="img">
-                    <img class="card-single" src="{% static 'img/coiffure-femme-noire-metis-hairstyles-black-women-1.jpg' %}" alt="">
-                    <h4>manicure</h4><br>
-                </div>
-               
             
-             
-        </div>
+
+
+        <div id="id03" class="modal">
+            <span onclick="document.getElementById('id0').style.display='none'" class="close" title="Close Modal">fermer</span>
+            <form class="modal-content" action="" method="post">
+              <div class="container">
+                <h6>Remplissez moi</h6>
+               
+               
+                <label for="title"><b>intitule de la photo</b></label>
+                <input type="text" placeholder="Entrer l'intitule" name="title" required>
+          
+                <label for="file"><b>image</b></label>
+                <input type="file" placeholder="Entrer la photo" name="file" required>
+
+          
+                
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signup">enregistre</button>
+                </div>
+              </div>
+            </form>
+          </div>
             <section class="recent">
                 <div class="activity-grid">
                         
@@ -122,6 +122,6 @@
         </main>
        </div>
    
-    
+
 </body>
 </html>

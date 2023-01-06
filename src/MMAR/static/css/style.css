@@ -297,7 +297,10 @@ h6{
     
     .dash-cards{
         grid-template-columns: repeat(2,1fr);
-        margin-left: 4rem;
+        
+        display: grid;
+        
+        grid-column-gap: 1rem;
     }
     .card-single{
         margin-bottom: 1rem;

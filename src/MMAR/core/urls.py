@@ -6,4 +6,5 @@ urlpatterns = [
     path("client",ClientPage.as_view(),name="client"),
     path('service',ServicesPage.as_view(),name='services'),
     path('compte',comptePage.as_view(),name='compte'),
+    path('modifier',modifierPage.as_view(),name='modifier'),
 ]
